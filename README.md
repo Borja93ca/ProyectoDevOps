@@ -5,3 +5,10 @@ En este proyecto usaré tecnologías para despliegue como Dockers, Kubernetes, T
 
 Servirá para dar a conocer mejor mis conocimientos con estas tecnologías de IaaS
 
+
+
+
+
+
+
+https://drive.google.com/drive/folders/1kBxuhehr3NRYqwV1aDyH8C88d_zcsL1r?usp=sharing
