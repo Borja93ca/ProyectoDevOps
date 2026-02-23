@@ -3,9 +3,9 @@ Cómandos básicos para utilizar Docker:
 docker ps -> lista los contenedores.
 docker ps -a -> lista todos los contenedores parados y activos.
 
-docker run imagen -> crea y ejecuta un contenedor desde una imagen.
-docker run it imagen -> activa el modo interactivo.
-docker run -d imagen -> activa el modo detached.
+docker run nombr -> crea y ejecuta un contenedor desde una imagen.
+docker run it nombre -> activa el modo interactivo.
+docker run -d nombre -> activa el modo detached.
 
 docker stop nombre -> para el docker.
 docker start nombre -> inicia el docker.
