@@ -1,1 +1,39 @@
-Código utilizado durante el proyecto para el despligue de Dockers
+Cómandos básicos para utilizar Docker:
+
+docker ps -> lista los contenedores.
+docker ps -a -> lista todos los contenedores parados y activos.
+
+docker run imagen -> crea y ejecuta un contenedor desde una imagen.
+docker run it imagen -> activa el modo interactivo.
+docker run -d imagen -> activa el modo detached.
+
+docker stop nombre -> para el docker.
+docker start nombre -> inicia el docker.
+docker rm nombre -> borra el docker.
+docker rm -f nombre -> fuerza el borrado del docker aunque esté en uso.
+
+docker logs id -> enseña los logs del docker con esa id.
+docker logs -f id -> enseña los logs en tiempo real.
+docker exec -it id sh -> entra dentro del contenedor.
+
+docker images -> lista las imagenes del contenedor.
+docker build -t nombre -> construye imagen desde Dockerfile en el directorio actual.
+docker rmi nombre -> borra la imagen
+docker pull nombre -> descarga la imagen
+docker push nombre -> sube la imagen 
+
+docker volume create nombre -> crea un volumen
+docker volume ls -> lista los volumenes
+docker volume inspect -> inspecciona los volumenes
+docker volume rm -> borra el volumen
+docker run -v mi-volumen:/data imagen -> monta el volumen
+
+docker container prune -> borra contenedores parados 
+docker image prune -> borra imagenes no usadas
+docker system prune -> limpia todo lo que no se use
+docker system df -> enseña el espacio usado 
+
+docker compose up -> levanta un servicio
+docker compose up -d -> levanta en segundo plano 
+docker compose down  -> para un servicio
+
