@@ -1,1 +1,37 @@
 Código utilizado durante el proyecto para el despligue de Kubernetes
+
+kubectl cluster-info         # Muestra información del cluster
+kubectl version              # Versión de cliente y servidor
+kubectl get nodes            # Lista los nodos del cluster
+kubectl get pods             # Lista los pods en el namespace actual
+kubectl get all              # Lista todos los recursos básicos
+kubectl get namespaces       # Lista todos los namespaces
+kubectl apply -f file.yaml   # Crea o actualiza recursos desde YAML
+kubectl create -f file.yaml  # Crea recursos desde YAML
+kubectl delete -f file.yaml  # Elimina recursos definidos en YAML
+kubectl delete pod <name>    # Elimina un pod específico
+kubectl replace -f file.yaml # Reemplaza un recurso existente
+kubectl describe pod <name>  # Información detallada del pod
+kubectl logs <pod>           # Logs de un pod
+kubectl logs -f <pod>        # Logs en tiempo real
+kubectl exec -it <pod> -- /bin/bash  # Accede al contenedor
+kubectl top pod              # Uso de CPU/memoria de pods
+kubectl top node             # Uso de recursos por nodo
+kubectl get deployments      # Lista deployments
+kubectl scale deployment <name> --replicas=3  # Escala réplicas
+kubectl rollout status deployment/<name>      # Estado del despliegue
+kubectl rollout restart deployment/<name>     # Reinicia deployment
+kubectl rollout undo deployment/<name>        # Rollback
+kubectl get services         # Lista servicios
+kubectl expose pod <pod> --port=80 --type=NodePort  # Expone un pod
+kubectl port-forward pod/<pod> 8080:80  # Redirige puerto local → pod
+kubectl get pods -n <ns>     # Ver pods en un namespace
+kubectl config set-context --current --namespace=<ns>  # Cambiar namespace
+kubectl config get-contexts  # Lista contextos
+kubectl config use-context <name>  # Cambia de contexto
+kubectl config view          # Ver configuración
+kubectl get pods -o wide     # Más detalles
+kubectl get pods -A          # Todos los namespaces
+kubectl delete pod <pod> --force --grace-period=0  # Forzar eliminación
+kubectl edit deployment <name>   # Editar recurso en caliente
+kubectl explain pod          # Documentación del recurso
